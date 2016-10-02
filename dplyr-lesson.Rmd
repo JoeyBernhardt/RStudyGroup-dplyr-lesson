@@ -6,7 +6,7 @@ output:
 ---
 
 ## `dplyr` lesson
-#### adapted from SWC
+#### adapted from [SWC's `dplyr` lesson](http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/)
 
 ```{r, include=FALSE}
 library(gapminder)
