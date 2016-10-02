@@ -5,7 +5,7 @@ output:
     keep_md: yes
 ---
 
-`dplyr` lesson, adapted from SWC
+## `dplyr` lesson, adapted from SWC
 
 ```{r, include=FALSE}
 library(gapminder)
@@ -61,7 +61,7 @@ library(dplyr)
 gapminder <- tbl_df(gapminder)
 ```
 
-## Using select()
+## Using `select()`
 
 If, for example, we wanted to move forward with only a few of the variables in
 our dataframe we could use the `select()` function. This will keep only the
@@ -91,7 +91,7 @@ gets that from the previous pipe. **Fun Fact**: There is a good chance you have
 encountered pipes before in the shell. In R, a pipe symbol is `%>%` while in the
 shell it is `|` but the concept is the same!
 
-## Using filter()
+## Using `filter()`
 
 If we now wanted to move forward with the above, but only with European
 countries, we can combine `select` and `filter`
@@ -124,7 +124,7 @@ function, then we pass the filtered version of the gapminder dataframe to the
 case. If we used 'select' first, filter would not be able to find the variable
 continent since we would have removed it in the previous step.
 
-## Using group_by() and summarize()
+## Using `group_by()` and `summarize()`
 
 Now, we were supposed to be reducing the error prone repetitiveness of what can
 be done with base R, but up to now we haven't done that since we would have to
@@ -148,7 +148,7 @@ value `continent` (at least in the example above).
 
 
 
-## Using summarize()
+## Using `summarize()`
 
 The above was a bit on the uneventful side because `group_by()` much more
 exciting in conjunction with `summarize()`. This will allow use to create new
@@ -202,7 +202,7 @@ gdp_pop_bycontinents_byyear <- gapminder %>%
               sd_pop=sd(pop))
 ```
 
-## Using mutate()
+## Using `mutate()`
 
 We can also create new variables prior to (or even after) summarizing information using `mutate()`.
 
