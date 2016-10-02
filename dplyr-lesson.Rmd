@@ -5,7 +5,8 @@ output:
     keep_md: yes
 ---
 
-## `dplyr` lesson, adapted from SWC
+## `dplyr` lesson
+#### adapted from SWC
 
 ```{r, include=FALSE}
 library(gapminder)
